@@ -1,0 +1,25 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This file is for your main application CSS */
+@layer utilities {
+  .scrollbar-hidden {
+    -ms-overflow-style: none; /* IE, Edge 対応 */
+    scrollbar-width: none; /* Firefox 対応 */
+  }
+  .scrollbar-hidden::-webkit-scrollbar {
+    /* Chrome, Safari 対応 */
+    display: none;
+  }
+
+  .note-input,
+  .note-input:focus {
+    display: block;
+    border: none;
+    boder-width: 0;
+    outline: 0;
+    --tw-ring-color: none;
+    resize: none;
+  }
+}
